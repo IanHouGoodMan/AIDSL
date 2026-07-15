@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ian DSL Data Workflow Platform | Education Demo | Contact: ianhou@outlook.com | +86 18666790161</title>
+    <meta
+      name="description"
+      content="Ian DSL Data Workflow Platform demo site. Education student-status videos are one concrete domain example. Contact ianhou@outlook.com, +86 18666790161."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260708-contact-style" />
+  </head>
+  <body>
+    <div class="bg-layer bg-layer-1"></div>
+    <div class="bg-layer bg-layer-2"></div>
+
+    <header class="hero">
+      <nav class="topbar" aria-label="Language and contact">
+        <p class="brand">Ian DSL Workflow</p>
+        <div class="language-switch" role="group" aria-label="Language switch">
+          <button class="lang-button active" type="button" data-lang="zh">中文</button>
+          <button class="lang-button" type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
+      <p class="eyebrow" data-i18n="eyebrow">IAN DATA WORKFLOW SHOWCASE</p>
+      <h1 data-i18n="heroTitle">Ian DSL 数据工作流平台</h1>
+      <p class="subtitle" data-i18n="heroSubtitle">把自然语言、数据规则和可执行 DSL 连接起来，让业务人员、数据负责人和工程师可以共同设计、运行和治理数据流程。</p>
+      <div class="contact-line" aria-label="Contact information">
+        <span data-i18n="contactOwner">负责人: <strong>Ian</strong></span>
+        <span data-i18n="contactEmail">邮箱: <a href="mailto:ianhou@outlook.com">ianhou@outlook.com</a></span>
+        <span data-i18n="contactPhone">手机: <a href="tel:+8618666790161">+86 18666790161</a></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro-card reveal">
+        <div>
+          <p class="section-label" data-i18n="introLabel">平台定位</p>
+          <h2 data-i18n="introTitle">不只是学籍演示，而是一套跨领域数据自动化方法</h2>
+        </div>
+        <p data-i18n="introBody">
+          当前视频使用教育学籍管理作为具体例子，展示数据初始化、导入、对比、校验和变更识别。平台的核心价值是把业务意图沉淀为 DSL 文档，再由执行器稳定运行，让同一套方法可以扩展到财务、运营、政务、主数据治理等更多数据场景。
+        </p>
+        <div class="intro-actions">
+          <a class="primary-link" href="#demoVideos" data-i18n="watchVideosCta">观看 01-08 Demo 视频</a>
+          <span data-i18n="watchVideosHint">视频在页面下方，展示真实测试过程。</span>
+        </div>
+      </section>
+
+      <section class="value-grid reveal" aria-label="Platform value">
+        <article class="value-card">
+          <span>01</span>
+          <h3 data-i18n="valueOneTitle">让业务人员看得懂</h3>
+          <p data-i18n="valueOneBody">普通用户可以通过表单、表格和对话方式提交、查询和补充数据，不必理解底层系统或代码。</p>
+        </article>
+        <article class="value-card">
+          <span>02</span>
+          <h3 data-i18n="valueTwoTitle">让数据负责人管得住</h3>
+          <p data-i18n="valueTwoBody">数据负责人可以定义数据源、输出、权限、校验、通知、导入、对比和处理规则，让流程有边界、有审计、有责任。</p>
+        </article>
+        <article class="value-card">
+          <span>03</span>
+          <h3 data-i18n="valueThreeTitle">让工程师改得快</h3>
+          <p data-i18n="valueThreeBody">工程师可以围绕 DSL、Schema、Source、Sink 和 Operators 迭代能力，减少重复开发，把更多时间放在领域规则和集成质量上。</p>
+        </article>
+      </section>
+
+      <section class="flow-section reveal">
+        <p class="section-label" data-i18n="flowLabel">工作方式</p>
+        <h2 data-i18n="flowTitle">从自然语言到可执行数据流程</h2>
+        <div class="flow-steps">
+          <div class="flow-step"><strong data-i18n="flowStepOneTitle">表达需求</strong><span data-i18n="flowStepOneBody">用户或数据负责人用自然语言描述查询、导入、对比或治理需求。</span></div>
+          <div class="flow-step"><strong data-i18n="flowStepTwoTitle">生成 DSL</strong><span data-i18n="flowStepTwoBody">AI 辅助把意图转换为结构化 DSL 文档，包含数据源、目标、算子和数据格式。</span></div>
+          <div class="flow-step"><strong data-i18n="flowStepThreeTitle">执行与反馈</strong><span data-i18n="flowStepThreeBody">DSL 执行器读取数据、应用规则、输出结果，并支持后续排错和版本更新。</span></div>
+        </div>
+      </section>
+
+      <section class="ai-dsl-section reveal">
+        <div class="ai-dsl-copy">
+          <p class="section-label" data-i18n="aiDslLabel">AI + DSL 价值</p>
+          <h2 data-i18n="aiDslTitle">让 AI 生成的不是一次性回答，而是企业可运行资产</h2>
+          <p data-i18n="aiDslBody">AI 负责理解业务语言和生成初稿，DSL 负责把结果约束成可检查、可执行、可审计、可复用的工作流。这样数据流程不只是聊天中的建议，而能进入真实系统运行，并持续沉淀为组织能力。</p>
+        </div>
+        <div class="ai-dsl-points" aria-label="AI and DSL value points">
+          <div><strong data-i18n="aiDslPointOneTitle">从意图到结构</strong><span data-i18n="aiDslPointOneBody">把自然语言需求转成明确的数据源、字段、规则、算子和输出。</span></div>
+          <div><strong data-i18n="aiDslPointTwoTitle">从生成到执行</strong><span data-i18n="aiDslPointTwoBody">DSL 执行器按确定规则运行流程，减少一次性脚本带来的不可控风险。</span></div>
+          <div><strong data-i18n="aiDslPointThreeTitle">从演示到沉淀</strong><span data-i18n="aiDslPointThreeBody">每个流程都可以预览、运行、追踪、调整和复用，形成企业自己的数据自动化资产。</span></div>
+        </div>
+      </section>
+
+      <section class="video-intro reveal" id="demoVideos">
+        <p class="section-label" data-i18n="videoLabel">具体例子</p>
+        <h2 data-i18n="videoTitle">教育学籍管理 Demo 视频</h2>
+        <p data-i18n="videoBody">下面 01-08 视频来自当前 IanDSLCLIMCPAgent solution 的真实测试录屏，展示其中一个领域场景：如何把学籍数据的初始化、导入前检查、差异对比和变更识别做成可重复执行的数据流程。</p>
+        <p class="silent-note" data-i18n="silentNote">提示：这些视频是无声音录屏。如果播放时没有声音，这是正常情况，不是电脑或手机故障。</p>
+      </section>
+
+      <section class="video-grid" id="videoGrid"></section>
+    </main>
+
+    <footer>
+      <p data-i18n="footerText">Copyright © <span id="year"></span> Ian | 联系邮箱: ianhou@outlook.com | 手机: +86 18666790161</p>
+    </footer>
+
+    <script src="./videos.js?v=20260708-contact-style"></script>
+  </body>
+</html>
