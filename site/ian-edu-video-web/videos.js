@@ -83,9 +83,12 @@ const translations = {
   },
 };
 
-// Set this to your GitHub release asset base URL for production.
-// Example: https://github.com/IanHouGoodMan/AIDSL/releases/download/demo-videos-v1
-const GITHUB_RELEASE_BASE_URL = "https://github.com/IanHouGoodMan/AIDSL/releases/download/demo-videos-v1";
+// IMPORTANT: GitHub Release asset URLs do NOT play inline in <video>.
+// They return content-disposition: attachment + application/octet-stream + nosniff,
+// so the browser downloads them instead of playing. For inline playback, bundle the
+// MP4 files under the site's `videos/` folder (served by GitHub Pages as video/mp4)
+// and keep GITHUB_RELEASE_BASE_URL empty.
+const GITHUB_RELEASE_BASE_URL = "";
 const LOCAL_VIDEO_BASE = "videos";
 
 const videos = [
@@ -184,12 +187,13 @@ function resolveVideoSrc(item) {
     return item.videoUrl;
   }
 
+  const name = item.releaseFileName || item.fileName;
+
   if (GITHUB_RELEASE_BASE_URL) {
-    const name = item.releaseFileName || item.fileName;
     return `${GITHUB_RELEASE_BASE_URL}/${encodeURIComponent(name)}`;
   }
 
-  return `${LOCAL_VIDEO_BASE}/${encodeURIComponent(item.fileName)}`;
+  return `${LOCAL_VIDEO_BASE}/${encodeURIComponent(name)}`;
 }
 
 function setLanguage(lang) {
